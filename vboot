@@ -1,0 +1,13 @@
+## /etc/default/vboot - configuration file for vboot-update(8)
+
+#VBOOT_UPDATE="true"
+
+#VBOOT_PARAMETERS="ro quiet"
+#VBOOT_ROOT=""
+#VBOOT_FDT=""
+#VBOOT_FDT_DIR="/usr/lib/linux-image-"
+
+# This field in mandatory
+#VBOOT_PARTITION="dev/disk/by-partlabel/SDKernelA"
+
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Exit if vboot-update was removed (!= purged)
+if [ -x /usr/sbin/vboot-update ]
+then
+	# Update the boot partition
+	vboot-update
+fi

@@ -1,0 +1,20 @@
+## /etc/default/vboot - configuration file for vboot-update(8)
+
+#VBOOT_UPDATE="true"
+
+#VBOOT_PARAMETERS="ro quiet"
+#VBOOT_ROOT=""
+#VBOOT_FDT=""
+#VBOOT_FDT_DIR="/usr/lib/linux-image-"
+
+VBOOT_PARTITION="/dev/disk/by-partlabel/SDKernelA"
+
+VBOOT_PARAMETERS="console=ttyMSM0,115200 console=ttyS0,115200 console=tty1 rootwait rw fbcon=logo-pos:center,logo-count:1"
+
+# qcom/sc7180-trogdor-coachz-r1.dtb
+# qcom/sc7180-trogdor-coachz-r1-lte.dtb
+# qcom/sc7180-trogdor-coachz-r3.dtb
+# qcom/sc7180-trogdor-coachz-r3-lte.dtb
+VBOOT_FDT="qcom/sc7180-trogdor-coachz-r3.dtb"
+
+
